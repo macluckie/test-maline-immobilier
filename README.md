@@ -41,6 +41,7 @@ N'oubliez pas de compléter le README.md (lancement des tests ect).
 
 Vous disposerez de 7 jours dès réception du test pour le renvoyer. Vous pouvez le renvoyer avant.
 Une fois le test terminé, merci de l'envoyer à ``narnodo@maline-immobilier.fr`` et de préciser : 
+- méthode pour récupérer le test (de préférence sur git sinon weTransfert)
 - temps total passé sur le test
 - reste à faire
 - pistes d'amélioration dans le travail réalisé
