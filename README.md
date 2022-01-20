@@ -53,3 +53,12 @@ Je reste à votre disposition si nécessaire, n'hésitez surtout pas à me conta
 Pour rappel, ce test évaluera principalement vos démarches et vos bonnes pratiques.
 
 Le délais de 7 jours doit vous permettre de vous organiser, pas de travailler 10h sur le test ;)
+
+#### Renvoi du test   
+
+lien du projet: https://github.com/macluckie/test-maline-immobilier.git
+1: installer le projet: composer install. 
+3: installer la base données sqlite selon l'environnement.
+4: lancer la migration: php bin/console doctrine:migrations:execute --up 20220116211757
+5: lancer les test unitaires: ./vendor/bin/phpunit
+6: aller sur l'acceuil pour créer une annonce. 

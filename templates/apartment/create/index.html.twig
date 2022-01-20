@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Add Apartment {% endblock %}
+
+{% block body %}
+
+<h1> create </h1>
+
+{{ form_start(form) }}
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">étage</label>
+  {{ form_widget(form.stage, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="room_number" class="form-label">nombre de pièce</label>
+  {{ form_widget(form.room_number, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="lift" class="form-label">ascenseur</label>
+  {{ form_widget(form.lift) }}
+</div>
+<div class="mb-3">
+  <label for="zip_code" class="form-label">code postal</label>
+  {{ form_widget(form.zip_code, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="city" class="form-label">ville</label>
+  {{ form_widget(form.city, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="address" class="form-label">adresse</label>
+  {{ form_widget(form.address, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="complement" class="form-label">complément</label>
+  {{ form_widget(form.complement, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="mb-3">
+  <label for="complement" class="form-label">Image</label>
+  {{ form_widget(form.pictureFileName, {'attr': {'class': 'form-control'}}) }}
+</div>
+
+<button type="submit" class="btn btn-primary">Valider</button>
+{{ form_end(form) }}
+{% endblock %}

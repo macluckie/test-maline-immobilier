@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} List Apartment {% endblock %}
+
+{% block body %}
+
+<h1> List Apartment </h1>
+
+<div class="apartments">
+    {% if apartments is not null %}
+    {% for apartment in apartments %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{asset('uploads/apartment/'~ apartment.pictureFileName)}}" class=" img-fluid card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Adresse</h5>
+            <p class="card-text">
+                étage: {{apartment.stage}} <br>
+                {{apartment.address}} {{ apartment.complement ? 'apartment.complement' : null }}. <br> ascenseur: {{
+                (apartment.lift) ? 'oui': 'non'}}.</p>
+            <a href="{{ path('apartment_handle',{'id': apartment.id })}}" class="btn btn-primary">Modifier</a>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

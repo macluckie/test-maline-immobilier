@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+
+.apartments{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.card-img-top{
+    height: 130px;
+}
+
+.create{
+    position: relative;
+    bottom: 48px;
+    left:100%;
+    
+}
